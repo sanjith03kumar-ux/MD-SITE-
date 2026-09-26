@@ -454,6 +454,20 @@
     overflow-wrap:anywhere;
   }
   .contact-grid a{border-bottom:1px solid var(--line);}
+  .md-contact-title{margin:0 0 12px;color:var(--navy-deep);font-family:"Fraunces",serif;font-size:21px;}
+  .md-email-button{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    padding:13px 21px;border:1px solid rgba(255,255,255,.72);border-radius:14px;
+    color:#fff !important;font-size:14px !important;font-weight:600;
+    text-decoration:none !important;letter-spacing:.01em;
+    background:linear-gradient(135deg,rgba(255,255,255,.34),rgba(255,255,255,.08) 45%,rgba(182,144,63,.30)),linear-gradient(135deg,#34336d,#22214f 65%,#171633);
+    box-shadow:inset 0 1px 1px rgba(255,255,255,.65),inset 0 -1px 0 rgba(255,255,255,.12),0 8px 20px rgba(24,23,53,.22);
+    backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+    transition:transform .2s ease,box-shadow .2s ease;
+  }
+  .md-email-button:hover{transform:translateY(-2px);box-shadow:inset 0 1px 1px rgba(255,255,255,.8),0 12px 24px rgba(24,23,53,.28);}
+  .md-email-button:focus-visible{outline:3px solid var(--gold);outline-offset:4px;}
+  .md-email-button .mail-icon{font-size:17px;line-height:1;}
   @media (max-width:700px){
     .contact-grid{grid-template-columns:1fr;}
   }
@@ -968,9 +982,11 @@
         <p style="margin-top:8px;"><a href="tel:+94777327790">+94 77 732 7790</a></p>
       </div>
       <div>
-        <h3>Email</h3>
-        <p><a href="mailto:crystalh@sltnet.lk">crystalh@sltnet.lk</a></p>
-        <p style="margin-top:8px;"><a href="mailto:wansah62@gmail.com">wansah62@gmail.com</a></p>
+        <h3>Contact the Managing Director</h3>
+        <a class="md-email-button" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=wansah62%40gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Compose an email to the Managing Director in Gmail">
+          <span class="mail-icon" aria-hidden="true">✉</span>
+          <span>Send Email</span>
+        </a>
       </div>
     </div>
   </div>
